@@ -1,0 +1,148 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000; /* Changed to Black */
+    color: #fff; /* White text for readability */
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #36d399; /* Green Highlight */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #36d399; /* Green */
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #111; /* Dark Container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Contact Info */
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #36d399; /* Green Title */
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #36d399; /* Green Links */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Icons */
+.contact-info i {
+    margin-right: 8px;
+    color: #36d399; /* Green Icons */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logo span {
+    color: #00ffa6;
+  }
+  
+  .logo:hover,
+  .logo:active {
+    transform: scale(1.2);
+    color: #00ff00;
+  }

@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0d0d0d, #111);
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo span {
+    color: #00ffa6;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #36d399;
+    font-weight: bold;
+  }
+  
+  /* Content Section */
+  .content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #111, #1c1c1c);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(54, 211, 153, 0.08);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .content h1 {
+    font-size: 42px;
+    color: #36d399;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Skills List */
+  .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .content ul li {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    border-left: 5px solid #00ffa6;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content ul li:hover {
+    background-color: #222;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .content ul li {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    border-left: 5px solid #00ffa6;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .content ul li:hover {
+    background-color: #222;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffa6;
+  }
+  
+  /* Add this to position the buttons at the top right corner */
+header .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+header .button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #36d399;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+}
+
+header .button-container button:hover {
+    transform: scale(1.1); /* Enlarge the button */
+    box-shadow: 0 0 15px 4px rgba(54, 211, 153, 0.8); /* Glow effect */
+    outline: 3px solid #00ffa6; /* Outline glow effect */
+}
+
+header .button-container button:focus {
+    outline: 3px solid #00ffa6; /* Outline on focus */
+}
+
+/* Add some margin to the buttons for spacing */
+header .button-container button:first-child {
+    margin-right: 10px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #00ffa6;
+}
+
+.logo:hover,
+.logo:active {
+  transform: scale(1.2);
+  color: #00ff00;
+}
